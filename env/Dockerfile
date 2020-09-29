@@ -17,7 +17,11 @@ RUN curl --compressed -o- -L https://yarnpkg.com/install.sh | bash
 ENV PATH $HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH
 
 RUN yarn global add typesync
+RUN yarn global add firebase-tools
 RUN apt-get update && apt-get install -y default-jdk --fix-missing
+
+RUN curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.36.0/install.sh | bash
+RUN nvm install v12.18.4
 
 ENV HOST 0.0.0.0
 EXPOSE 3000
