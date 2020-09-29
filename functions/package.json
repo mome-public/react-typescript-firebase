@@ -3,10 +3,13 @@
   "scripts": {
     "lint": "eslint 'src/**/*.{js,ts}'",
     "build": "npm run lint && tsc",
+    "dbreset": "firebase firestore:delete --all-collections",
+    "dbreset:users": "firebase firestore:delete -y --shallow users",
+    "dbseed": "npm run dbseed:users",
+    "dbseed:users": "node lib/commands/dbseed.js users seeds/users.tsv",
     "serve": "npm run build && firebase emulators:start --only functions",
     "shell": "npm run build && firebase functions:shell",
     "start": "npm run shell",
-    "test": "jest",
     "deploy": "firebase deploy --only functions",
     "logs": "firebase functions:log"
   },
@@ -22,6 +25,7 @@
     "firebase-functions": "^3.6.1"
   },
   "devDependencies": {
+    "@types/eslint-plugin-prettier": "^3.1.0",
     "@types/jest": "^26.0.14",
     "@typescript-eslint/eslint-plugin": "^4.3.0",
     "@typescript-eslint/parser": "^4.3.0",
