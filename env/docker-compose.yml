@@ -12,6 +12,7 @@ services:
       - 8080:8080
       - 8085:8085
       - 9005:9005
+      - 9009:9009
     volumes:
       - ../:/app/react-typescript-firebase
     stdin_open: true
