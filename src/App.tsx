@@ -22,7 +22,7 @@ const App: React.FC = () => (
           Learn React
         </a>
       </header>
-      <BaseButton />
+      <BaseButton href="https://www.bakery-lab.tokyo/" />
     </div>
   </ThemeProvider>
 );

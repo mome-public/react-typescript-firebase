@@ -2,7 +2,7 @@ import React, { FC, ReactNode } from 'react';
 import Button from '@material-ui/core/Button';
 
 type Props = {
-  children: ReactNode;
+  children?: ReactNode;
   onClick?: () => void;
   href?: string;
   variant?: 'contained' | 'outlined' | 'text';
