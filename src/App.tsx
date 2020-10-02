@@ -2,6 +2,7 @@ import React from 'react';
 import ThemeProvider from '@material-ui/styles/ThemeProvider'; // eslint-disable-line import/no-extraneous-dependencies
 import { theme } from 'styles/theme';
 import BaseButton from 'components/atoms/BaseButton';
+import BaseImage from 'components/atoms/BaseImage';
 import logo from './logo.svg';
 import './App.css';
 
@@ -22,7 +23,10 @@ const App: React.FC = () => (
           Learn React
         </a>
       </header>
-      <BaseButton href="https://www.bakery-lab.tokyo/" />
+      <BaseButton href="https://www.bakery-lab.tokyo/">
+        テストテキスト
+      </BaseButton>
+      <BaseImage src="https://mome.fan/_nuxt/img/08f6d87.png" alt="test" />
     </div>
   </ThemeProvider>
 );

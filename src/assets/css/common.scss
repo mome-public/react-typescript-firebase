@@ -1,0 +1,19 @@
+/**
+ * ITCSS Structure
+ * https://speakerdeck.com/dafed/managing-css-projects-with-itcss?slide=49
+ *
+ * Settings............ Global variables, configs
+ * Tools............... Default mixin and functions
+ * Generic............. Ground-zero styles (reset, normalize, sanitize)
+ * Base................ Unclassed HTML elements (type selectors)
+ * Objects............. Cosmetic-free design patterns
+ * Components.......... Design components
+ * Trumps.............. Helpers and overrides(!important)
+ */
+// @import 'settings/**/*.scss';
+// @import 'tools/**/*.scss';
+// @import 'generic/**/*.scss';
+// @import 'base/**/*.scss';
+// @import 'objects/**/*.scss';
+@import 'components/**/*.scss';
+// @import 'trumps/**/*.scss';
