@@ -5,6 +5,9 @@ module.exports = {
   addons: [
     '@storybook/preset-create-react-app',
     '@storybook/addon-knobs',
+    '@storybook/addon-viewport',
+    '@storybook/addon-links',
+    '@storybook/addon-storysource',
     '@storybook/addon-actions',
   ],
   webpackFinal: async (config, { configType }) => {
