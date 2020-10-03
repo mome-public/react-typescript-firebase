@@ -3,22 +3,22 @@ import Button from '@material-ui/core/Button';
 
 type Props = {
   children?: ReactNode;
-  onClick?: () => void;
-  href?: string;
   variant?: 'contained' | 'outlined' | 'text';
+  href?: string;
   color?: 'primary' | 'secondary';
   size?: 'small' | 'medium' | 'large';
+  onClick?: () => void;
   disabled?: boolean;
   fullWidth?: boolean;
 };
 
-const BaseButton: FC<Props> = ({
+export const BaseButton: FC<Props> = ({
   children,
-  onClick,
-  href = '',
   variant = 'contained',
+  href = '',
   color = 'primary',
   size = 'large',
+  onClick,
   disabled = false,
   fullWidth = false,
 }) => {
@@ -45,5 +45,3 @@ const BaseButton: FC<Props> = ({
     </Button>
   );
 };
-
-export default BaseButton;
