@@ -5,8 +5,6 @@ type Props = {
   alt?: string;
 };
 
-const BaseImage: FC<Props> = ({ src, alt = '' }) => {
-  return <img src={src} alt={alt} className="image" />;
+export const BaseImage: FC<Props> = ({ src, alt = '' }) => {
+  return <img src={src} alt={alt} className="a-image" />;
 };
-
-export default BaseImage;
