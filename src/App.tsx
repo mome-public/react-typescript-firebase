@@ -1,8 +1,7 @@
 import React from 'react';
 import ThemeProvider from '@material-ui/styles/ThemeProvider'; // eslint-disable-line import/no-extraneous-dependencies
 import { theme } from 'styles/theme';
-import BaseButton from 'components/atoms/BaseButton';
-import BaseImage from 'components/atoms/BaseImage';
+import { BaseButton, BaseImage } from 'components/atoms';
 import logo from './logo.svg';
 import './App.css';
 
