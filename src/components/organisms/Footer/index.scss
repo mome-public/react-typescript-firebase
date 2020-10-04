@@ -1,0 +1,15 @@
+.o-footer {
+  &__navigation {
+    padding: 1rem 1.5rem;
+    font-size: 0.875rem;
+    background-color: #e7eded;
+  }
+
+  &__navigation-item {
+    line-height: 2rem;
+  }
+
+  &__navigation-item:not(:last-child) {
+    padding-right: 0.75rem;
+  }
+}
